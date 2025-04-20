@@ -1,6 +1,6 @@
 <?php
 require ("db.php");
-require("ip.php");
+//require("ip.php"); not required
 
       $sql = "SELECT * FROM articles ORDER BY date DESC";
       $result = $conn->query($sql);
