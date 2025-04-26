@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if (!isset($_SESSION['tim'])) { // put your username here
     die("you are not tim");
 }
