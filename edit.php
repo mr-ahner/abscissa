@@ -1,4 +1,7 @@
-    <?php
+<?php
+if (!isset($_SESSION['tim'])) { // put your username here
+    die("you are not tim");
+}
 require("db.php");
 
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
